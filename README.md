@@ -2,9 +2,9 @@
 
 SNOMED CT Expression Constraint Language Implementation with IDE integration(s), user interface using Xtext.
 
-[![build status](https://img.shields.io/github/actions/workflow/status/b2ihealthcare/snomed-ecl/maven.yml?branch=main&style=flat-square)](https://github.com/b2ihealthcare/snomed-ecl/actions)
-[![latest release](https://img.shields.io/github/tag/b2ihealthcare/snomed-ecl.svg?style=flat-square)](https://github.com/b2ihealthcare/snomed-ecl/releases/tag/v2.1.4)
-[![GitHub](https://img.shields.io/github/license/b2ihealthcare/snomed-ecl.svg?style=flat-square)](https://github.com/b2ihealthcare/snomed-ecl/blob/main/LICENSE)
+[![build status](https://img.shields.io/github/actions/workflow/status/iqvia-hds-oss/snomed-ecl/maven.yml?branch=main&style=flat-square)](https://github.com/iqvia-hds-oss/snomed-ecl/actions)
+[![latest release](https://img.shields.io/github/tag/iqvia-hds-oss/snomed-ecl.svg?style=flat-square)](https://github.com/iqvia-hds-oss/snomed-ecl/releases/tag/v2.1.4)
+[![GitHub](https://img.shields.io/github/license/iqvia-hds-oss/snomed-ecl.svg?style=flat-square)](https://github.com/iqvia-hds-oss/snomed-ecl/blob/main/LICENSE)
 
 # Documentation
 
@@ -12,13 +12,13 @@ See the official documentation [here](http://snomed.org/ecl)
 
 # Supported versions
 
-* https://github.com/b2ihealthcare/snomed-ecl/releases/tag/v2.2.0 - ECL 2.2
-* https://github.com/b2ihealthcare/snomed-ecl/releases/tag/v2.1.4 - ECL 2.1
-* https://github.com/b2ihealthcare/snomed-ecl/releases/tag/v2.0.4 - ECL 2.0
-* https://github.com/b2ihealthcare/snomed-ecl/releases/tag/v1.6.0 - ECL 1.6
-* https://github.com/b2ihealthcare/snomed-ecl/releases/tag/v1.5.2 - ECL 1.5
-* https://github.com/b2ihealthcare/snomed-ecl/releases/tag/v1.4.3 - ECL 1.4
-* https://github.com/b2ihealthcare/snomed-ecl/releases/tag/v1.3.0 - ECL 1.3
+* https://github.com/iqvia-hds-oss/snomed-ecl/releases/tag/v2.2.0 - ECL 2.2
+* https://github.com/iqvia-hds-oss/snomed-ecl/releases/tag/v2.1.4 - ECL 2.1
+* https://github.com/iqvia-hds-oss/snomed-ecl/releases/tag/v2.0.4 - ECL 2.0
+* https://github.com/iqvia-hds-oss/snomed-ecl/releases/tag/v1.6.0 - ECL 1.6
+* https://github.com/iqvia-hds-oss/snomed-ecl/releases/tag/v1.5.2 - ECL 1.5
+* https://github.com/iqvia-hds-oss/snomed-ecl/releases/tag/v1.4.3 - ECL 1.4
+* https://github.com/iqvia-hds-oss/snomed-ecl/releases/tag/v1.3.0 - ECL 1.3
 
 # Building from source
 
@@ -38,4 +38,4 @@ Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 # Versioning
 
-Our [releases](https://github.com/b2ihealthcare/snomed-ecl/releases) use [semantic versioning](http://semver.org). You can find a chronologically ordered list of notable changes in [CHANGELOG.md](CHANGELOG.md).
+Our [releases](https://github.com/iqvia-hds-oss/snomed-ecl/releases) use [semantic versioning](http://semver.org). You can find a chronologically ordered list of notable changes in [CHANGELOG.md](CHANGELOG.md).
