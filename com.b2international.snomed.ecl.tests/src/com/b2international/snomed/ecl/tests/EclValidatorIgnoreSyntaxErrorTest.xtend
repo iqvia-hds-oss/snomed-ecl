@@ -59,6 +59,7 @@ class EclValidatorIgnoreSyntaxErrorTest {
 			'R'.assertNoErrors
 			'MIN'.assertNoErrors
 			'<<MAX'.assertNoErrors
+			'MINMIN'.assertNoErrors
 		
 			val constraint2 = '<<R : R S = D'.assertNoErrors
 				.constraint as RefinedExpressionConstraint;

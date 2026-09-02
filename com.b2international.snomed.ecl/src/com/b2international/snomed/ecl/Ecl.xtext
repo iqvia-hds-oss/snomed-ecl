@@ -341,7 +341,7 @@ HistoryProfile:
  * Datatype rules
  */
 Identifier returns ecore::EString hidden():
-	// XXX: This will recognize MIN but not e.g. MINMIN
+	// XXX: This will recognize only MIN and MAX but not other keywords, e.g. MINUS as a valid identifier
 	// we are trying to keep the number of alternatives low while supporting a specific use case
 	(DIGIT | ALPHA | CONCEPT_SHORT_KEYWORD | DESCRIPTION_SHORT_KEYWORD | MEMBER_SHORT_KEYWORD | REVERSED | ID_KEYWORD | MIN_KEYWORD | MAX_KEYWORD | KEYWORD) 
 	(DIGIT | ALPHA | CONCEPT_SHORT_KEYWORD | DESCRIPTION_SHORT_KEYWORD | MEMBER_SHORT_KEYWORD | REVERSED | ID_KEYWORD | KEYWORD | DASH | UNDERSCORE)*;
