@@ -2879,7 +2879,9 @@ public class EclGrammarAccess extends AbstractElementFinder.AbstractGrammarEleme
 		private final RuleCall cMEMBER_SHORT_KEYWORDTerminalRuleCall_0_4 = (RuleCall)cAlternatives_0.eContents().get(4);
 		private final RuleCall cREVERSEDTerminalRuleCall_0_5 = (RuleCall)cAlternatives_0.eContents().get(5);
 		private final RuleCall cID_KEYWORDTerminalRuleCall_0_6 = (RuleCall)cAlternatives_0.eContents().get(6);
-		private final RuleCall cKEYWORDTerminalRuleCall_0_7 = (RuleCall)cAlternatives_0.eContents().get(7);
+		private final RuleCall cMIN_KEYWORDTerminalRuleCall_0_7 = (RuleCall)cAlternatives_0.eContents().get(7);
+		private final RuleCall cMAX_KEYWORDTerminalRuleCall_0_8 = (RuleCall)cAlternatives_0.eContents().get(8);
+		private final RuleCall cKEYWORDTerminalRuleCall_0_9 = (RuleCall)cAlternatives_0.eContents().get(9);
 		private final Alternatives cAlternatives_1 = (Alternatives)cGroup.eContents().get(1);
 		private final RuleCall cDIGITTerminalRuleCall_1_0 = (RuleCall)cAlternatives_1.eContents().get(0);
 		private final RuleCall cALPHATerminalRuleCall_1_1 = (RuleCall)cAlternatives_1.eContents().get(1);
@@ -2896,15 +2898,21 @@ public class EclGrammarAccess extends AbstractElementFinder.AbstractGrammarEleme
 		// * Datatype rules
 		// */
 		//Identifier returns ecore::EString hidden():
-		//    (DIGIT | ALPHA | CONCEPT_SHORT_KEYWORD | DESCRIPTION_SHORT_KEYWORD | MEMBER_SHORT_KEYWORD | REVERSED | ID_KEYWORD | KEYWORD)
+		//    // XXX: This will recognize MIN but not e.g. MINMIN
+		//    // we are trying to keep the number of alternatives low while supporting a specific use case
+		//    (DIGIT | ALPHA | CONCEPT_SHORT_KEYWORD | DESCRIPTION_SHORT_KEYWORD | MEMBER_SHORT_KEYWORD | REVERSED | ID_KEYWORD | MIN_KEYWORD | MAX_KEYWORD | KEYWORD)
 		//    (DIGIT | ALPHA | CONCEPT_SHORT_KEYWORD | DESCRIPTION_SHORT_KEYWORD | MEMBER_SHORT_KEYWORD | REVERSED | ID_KEYWORD | KEYWORD | DASH | UNDERSCORE)*;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//(DIGIT | ALPHA | CONCEPT_SHORT_KEYWORD | DESCRIPTION_SHORT_KEYWORD | MEMBER_SHORT_KEYWORD | REVERSED | ID_KEYWORD | KEYWORD)
+		//// XXX: This will recognize MIN but not e.g. MINMIN
+		//// we are trying to keep the number of alternatives low while supporting a specific use case
+		//(DIGIT | ALPHA | CONCEPT_SHORT_KEYWORD | DESCRIPTION_SHORT_KEYWORD | MEMBER_SHORT_KEYWORD | REVERSED | ID_KEYWORD | MIN_KEYWORD | MAX_KEYWORD | KEYWORD)
 		//(DIGIT | ALPHA | CONCEPT_SHORT_KEYWORD | DESCRIPTION_SHORT_KEYWORD | MEMBER_SHORT_KEYWORD | REVERSED | ID_KEYWORD | KEYWORD | DASH | UNDERSCORE)*
 		public Group getGroup() { return cGroup; }
 		
-		//(DIGIT | ALPHA | CONCEPT_SHORT_KEYWORD | DESCRIPTION_SHORT_KEYWORD | MEMBER_SHORT_KEYWORD | REVERSED | ID_KEYWORD | KEYWORD)
+		//// XXX: This will recognize MIN but not e.g. MINMIN
+		//// we are trying to keep the number of alternatives low while supporting a specific use case
+		//(DIGIT | ALPHA | CONCEPT_SHORT_KEYWORD | DESCRIPTION_SHORT_KEYWORD | MEMBER_SHORT_KEYWORD | REVERSED | ID_KEYWORD | MIN_KEYWORD | MAX_KEYWORD | KEYWORD)
 		public Alternatives getAlternatives_0() { return cAlternatives_0; }
 		
 		//DIGIT
@@ -2928,8 +2936,14 @@ public class EclGrammarAccess extends AbstractElementFinder.AbstractGrammarEleme
 		//ID_KEYWORD
 		public RuleCall getID_KEYWORDTerminalRuleCall_0_6() { return cID_KEYWORDTerminalRuleCall_0_6; }
 		
+		//MIN_KEYWORD
+		public RuleCall getMIN_KEYWORDTerminalRuleCall_0_7() { return cMIN_KEYWORDTerminalRuleCall_0_7; }
+		
+		//MAX_KEYWORD
+		public RuleCall getMAX_KEYWORDTerminalRuleCall_0_8() { return cMAX_KEYWORDTerminalRuleCall_0_8; }
+		
 		//KEYWORD
-		public RuleCall getKEYWORDTerminalRuleCall_0_7() { return cKEYWORDTerminalRuleCall_0_7; }
+		public RuleCall getKEYWORDTerminalRuleCall_0_9() { return cKEYWORDTerminalRuleCall_0_9; }
 		
 		//(DIGIT | ALPHA | CONCEPT_SHORT_KEYWORD | DESCRIPTION_SHORT_KEYWORD | MEMBER_SHORT_KEYWORD | REVERSED | ID_KEYWORD | KEYWORD | DASH | UNDERSCORE)*
 		public Alternatives getAlternatives_1() { return cAlternatives_1; }
@@ -4954,7 +4968,9 @@ public class EclGrammarAccess extends AbstractElementFinder.AbstractGrammarEleme
 	// * Datatype rules
 	// */
 	//Identifier returns ecore::EString hidden():
-	//    (DIGIT | ALPHA | CONCEPT_SHORT_KEYWORD | DESCRIPTION_SHORT_KEYWORD | MEMBER_SHORT_KEYWORD | REVERSED | ID_KEYWORD | KEYWORD)
+	//    // XXX: This will recognize MIN but not e.g. MINMIN
+	//    // we are trying to keep the number of alternatives low while supporting a specific use case
+	//    (DIGIT | ALPHA | CONCEPT_SHORT_KEYWORD | DESCRIPTION_SHORT_KEYWORD | MEMBER_SHORT_KEYWORD | REVERSED | ID_KEYWORD | MIN_KEYWORD | MAX_KEYWORD | KEYWORD)
 	//    (DIGIT | ALPHA | CONCEPT_SHORT_KEYWORD | DESCRIPTION_SHORT_KEYWORD | MEMBER_SHORT_KEYWORD | REVERSED | ID_KEYWORD | KEYWORD | DASH | UNDERSCORE)*;
 	public IdentifierElements getIdentifierAccess() {
 		return pIdentifier;

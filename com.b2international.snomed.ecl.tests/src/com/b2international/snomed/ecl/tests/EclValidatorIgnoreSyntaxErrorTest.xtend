@@ -57,6 +57,8 @@ class EclValidatorIgnoreSyntaxErrorTest {
 			'E1___u32E9'.assertNoErrors
 			'9876 {{ id = d_54321 }}'.assertNoErrors
 			'R'.assertNoErrors
+			'MIN'.assertNoErrors
+			'<<MAX'.assertNoErrors
 		
 			val constraint2 = '<<R : R S = D'.assertNoErrors
 				.constraint as RefinedExpressionConstraint;

@@ -3538,9 +3538,21 @@ rule__Identifier__Alternatives_0
 	)
 	|
 	(
-		{ before(grammarAccess.getIdentifierAccess().getKEYWORDTerminalRuleCall_0_7()); }
+		{ before(grammarAccess.getIdentifierAccess().getMIN_KEYWORDTerminalRuleCall_0_7()); }
+		RULE_MIN_KEYWORD
+		{ after(grammarAccess.getIdentifierAccess().getMIN_KEYWORDTerminalRuleCall_0_7()); }
+	)
+	|
+	(
+		{ before(grammarAccess.getIdentifierAccess().getMAX_KEYWORDTerminalRuleCall_0_8()); }
+		RULE_MAX_KEYWORD
+		{ after(grammarAccess.getIdentifierAccess().getMAX_KEYWORDTerminalRuleCall_0_8()); }
+	)
+	|
+	(
+		{ before(grammarAccess.getIdentifierAccess().getKEYWORDTerminalRuleCall_0_9()); }
 		RULE_KEYWORD
-		{ after(grammarAccess.getIdentifierAccess().getKEYWORDTerminalRuleCall_0_7()); }
+		{ after(grammarAccess.getIdentifierAccess().getKEYWORDTerminalRuleCall_0_9()); }
 	)
 ;
 finally {
